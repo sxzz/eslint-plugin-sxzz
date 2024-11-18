@@ -1,7 +1,7 @@
 {
   "name": "eslint-plugin-sxzz",
   "version": "0.1.0",
-  "packageManager": "pnpm@9.12.3",
+  "packageManager": "pnpm@9.13.2",
   "description": "A collection of ESLint rules.",
   "type": "module",
   "license": "MIT",
@@ -46,17 +46,17 @@
     "eslint": "*"
   },
   "devDependencies": {
-    "@sxzz/eslint-config": "^4.4.0",
+    "@sxzz/eslint-config": "^4.4.1",
     "@sxzz/prettier-config": "^2.0.2",
     "@types/node": "^22.9.0",
     "bumpp": "^9.8.1",
-    "eslint": "^9.14.0",
+    "eslint": "^9.15.0",
     "eslint-vitest-rule-tester": "^0.6.1",
     "prettier": "^3.3.3",
     "tsup": "^8.3.5",
     "tsx": "^4.19.2",
     "typescript": "^5.6.3",
-    "vitest": "^2.1.4"
+    "vitest": "^2.1.5"
   },
   "resolutions": {
     "eslint-plugin-sxzz": "workspace:*"
