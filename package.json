@@ -43,7 +43,7 @@
     "eslint": "*"
   },
   "devDependencies": {
-    "@sxzz/eslint-config": "^4.6.0",
+    "@sxzz/eslint-config": "^5.0.1",
     "@sxzz/prettier-config": "^2.1.2",
     "@types/node": "^22.13.1",
     "bumpp": "^9.11.1",
