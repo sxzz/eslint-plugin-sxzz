@@ -46,7 +46,7 @@
     "@sxzz/eslint-config": "^5.1.1",
     "@sxzz/prettier-config": "^2.2.0",
     "@types/node": "^22.13.4",
-    "bumpp": "^9.11.1",
+    "bumpp": "^10.0.3",
     "eslint": "^9.20.1",
     "eslint-vitest-rule-tester": "^1.1.0",
     "prettier": "^3.5.1",
