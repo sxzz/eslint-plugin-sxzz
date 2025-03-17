@@ -50,7 +50,7 @@
     "@typescript-eslint/utils": "^8.26.0",
     "bumpp": "^10.0.3",
     "eslint": "^9.22.0",
-    "eslint-vitest-rule-tester": "^1.1.0",
+    "eslint-vitest-rule-tester": "^2.1.0",
     "jsonc-eslint-parser": "^2.4.0",
     "prettier": "^3.5.3",
     "rollup": "^4.35.0",
