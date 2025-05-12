@@ -43,7 +43,7 @@
     "eslint": "*"
   },
   "devDependencies": {
-    "@sxzz/eslint-config": "^7.0.0",
+    "@sxzz/eslint-config": "^7.0.1",
     "@sxzz/prettier-config": "^2.2.1",
     "@types/node": "^22.15.17",
     "@typescript-eslint/parser": "^8.32.0",
@@ -53,7 +53,7 @@
     "eslint-vitest-rule-tester": "^2.2.0",
     "jsonc-eslint-parser": "^2.4.0",
     "prettier": "^3.5.3",
-    "tsdown": "^0.11.1",
+    "tsdown": "^0.11.5",
     "tsx": "^4.19.4",
     "typescript": "^5.8.3",
     "vitest": "^3.1.3"
