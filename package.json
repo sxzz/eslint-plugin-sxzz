@@ -48,13 +48,13 @@
     "@types/node": "^22.15.21",
     "@typescript-eslint/parser": "^8.32.1",
     "@typescript-eslint/utils": "^8.32.1",
+    "@typescript/native-preview": "7.0.0-dev.20250601.1",
     "bumpp": "^10.1.1",
     "eslint": "^9.27.0",
     "eslint-vitest-rule-tester": "^2.2.0",
     "jsonc-eslint-parser": "^2.4.0",
     "prettier": "^3.5.3",
     "tsdown": "^0.12.3",
-    "tsgo-dev": "^2025.6.1",
     "tsx": "^4.19.4",
     "typescript": "^5.8.3",
     "vitest": "^3.1.4"
@@ -64,7 +64,7 @@
   },
   "resolutions": {
     "eslint-plugin-sxzz": "workspace:*",
-    "rolldown-plugin-dts": "https://pkg.pr.new/sxzz/rolldown-plugin-dts@43"
+    "rolldown-plugin-dts": "https://pkg.pr.new/sxzz/rolldown-plugin-dts@10deb45"
   },
   "prettier": "@sxzz/prettier-config"
 }
