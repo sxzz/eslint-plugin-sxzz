@@ -1,7 +1,7 @@
 {
   "name": "eslint-plugin-sxzz",
   "version": "0.3.0",
-  "packageManager": "pnpm@10.12.2",
+  "packageManager": "pnpm@10.12.4",
   "description": "A collection of ESLint rules.",
   "type": "module",
   "license": "MIT",
@@ -44,17 +44,17 @@
   },
   "devDependencies": {
     "@sxzz/eslint-config": "^7.0.4",
-    "@sxzz/prettier-config": "^2.2.1",
-    "@types/node": "^22.15.32",
-    "@typescript-eslint/parser": "^8.35.0",
-    "@typescript-eslint/utils": "^8.35.0",
-    "@typescript/native-preview": "7.0.0-dev.20250623.1",
+    "@sxzz/prettier-config": "^2.2.3",
+    "@types/node": "^24.0.10",
+    "@typescript-eslint/parser": "^8.35.1",
+    "@typescript-eslint/utils": "^8.35.1",
+    "@typescript/native-preview": "^7.0.0-dev.20250703.1",
     "bumpp": "^10.2.0",
-    "eslint": "^9.29.0",
+    "eslint": "^9.30.1",
     "eslint-vitest-rule-tester": "^2.2.0",
     "jsonc-eslint-parser": "^2.4.0",
-    "prettier": "^3.6.0",
-    "tsdown": "^0.12.8",
+    "prettier": "^3.6.2",
+    "tsdown": "^0.12.9",
     "tsx": "^4.20.3",
     "typescript": "^5.8.3",
     "vitest": "^3.2.4"
@@ -63,8 +63,7 @@
     "node": ">=20.18.0"
   },
   "resolutions": {
-    "eslint-plugin-sxzz": "workspace:*",
-    "rolldown-plugin-dts": "https://pkg.pr.new/sxzz/rolldown-plugin-dts@10deb45"
+    "eslint-plugin-sxzz": "workspace:*"
   },
   "prettier": "@sxzz/prettier-config"
 }
