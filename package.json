@@ -16,7 +16,8 @@
   "author": "三咲智子 Kevin Deng <sxzz@sxzz.moe>",
   "funding": "https://github.com/sponsors/sxzz",
   "files": [
-    "dist"
+    "dist",
+    "eslint-typegen.d.ts"
   ],
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -31,7 +32,7 @@
   "scripts": {
     "lint": "eslint --cache .",
     "lint:fix": "pnpm run lint --fix",
-    "build": "tsdown",
+    "build": "tsx scripts/typegen.ts && tsdown",
     "dev": "tsdown --watch",
     "test": "vitest",
     "typecheck": "tsc --noEmit",
@@ -51,6 +52,7 @@
     "@typescript/native-preview": "^7.0.0-dev.20250712.1",
     "bumpp": "^10.2.0",
     "eslint": "^9.31.0",
+    "eslint-typegen": "^2.2.1",
     "eslint-vitest-rule-tester": "^2.2.0",
     "jsonc-eslint-parser": "^2.4.0",
     "prettier": "^3.6.2",
