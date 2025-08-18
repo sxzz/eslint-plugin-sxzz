@@ -1,6 +1,8 @@
-# eslint-plugin-sxzz [![npm](https://img.shields.io/npm/v/eslint-plugin-sxzz.svg)](https://npmjs.com/package/eslint-plugin-sxzz)
+# eslint-plugin-sxzz
 
-[![Unit Test](https://github.com/sxzz/eslint-plugin-sxzz/actions/workflows/unit-test.yml/badge.svg)](https://github.com/sxzz/eslint-plugin-sxzz/actions/workflows/unit-test.yml)
+[![npm version][npm-version-src]][npm-version-href]
+[![npm downloads][npm-downloads-src]][npm-downloads-href]
+[![Unit Test][unit-test-src]][unit-test-href]
 
 A collection of ESLint rules.
 
@@ -26,4 +28,13 @@ npm i eslint-plugin-sxzz
 
 ## License
 
-[MIT](./LICENSE) License © 2024 [三咲智子 Kevin Deng](https://github.com/sxzz)
+[MIT](./LICENSE) License © 2024-PRESENT [Kevin Deng](https://github.com/sxzz)
+
+<!-- Badges -->
+
+[npm-version-src]: https://img.shields.io/npm/v/eslint-plugin-sxzz.svg
+[npm-version-href]: https://npmjs.com/package/eslint-plugin-sxzz
+[npm-downloads-src]: https://img.shields.io/npm/dm/eslint-plugin-sxzz
+[npm-downloads-href]: https://www.npmcharts.com/compare/eslint-plugin-sxzz?interval=30
+[unit-test-src]: https://github.com/sxzz/eslint-plugin-sxzz/actions/workflows/unit-test.yml/badge.svg
+[unit-test-href]: https://github.com/sxzz/eslint-plugin-sxzz/actions/workflows/unit-test.yml
