@@ -1,7 +1,7 @@
 {
   "name": "eslint-plugin-sxzz",
   "version": "0.4.1",
-  "packageManager": "pnpm@10.14.0",
+  "packageManager": "pnpm@10.15.0",
   "description": "A collection of ESLint rules.",
   "type": "module",
   "license": "MIT",
@@ -35,7 +35,7 @@
     "build": "tsx scripts/typegen.ts && tsdown",
     "dev": "tsdown --watch",
     "test": "vitest",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "tsgo --noEmit",
     "format": "prettier --cache --write .",
     "release": "bumpp",
     "prepublishOnly": "pnpm run build"
@@ -44,14 +44,14 @@
     "eslint": "*"
   },
   "devDependencies": {
-    "@sxzz/eslint-config": "^7.1.2",
-    "@sxzz/prettier-config": "^2.2.3",
+    "@sxzz/eslint-config": "^7.1.4",
+    "@sxzz/prettier-config": "^2.2.4",
     "@types/node": "^24.3.0",
-    "@typescript-eslint/parser": "^8.39.1",
-    "@typescript-eslint/utils": "^8.39.1",
-    "@typescript/native-preview": "^7.0.0-dev.20250816.1",
+    "@typescript-eslint/parser": "^8.40.0",
+    "@typescript-eslint/utils": "^8.40.0",
+    "@typescript/native-preview": "^7.0.0-dev.20250822.1",
     "bumpp": "^10.2.3",
-    "eslint": "^9.33.0",
+    "eslint": "^9.34.0",
     "eslint-typegen": "^2.3.0",
     "eslint-vitest-rule-tester": "^2.2.1",
     "jsonc-eslint-parser": "^2.4.0",
