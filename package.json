@@ -49,7 +49,7 @@
     "@types/node": "^24.3.0",
     "@typescript-eslint/parser": "^8.40.0",
     "@typescript-eslint/utils": "^8.40.0",
-    "@typescript/native-preview": "^7.0.0-dev.20250822.1",
+    "@typescript/native-preview": "^7.0.0-dev.20250824.1",
     "bumpp": "^10.2.3",
     "eslint": "^9.34.0",
     "eslint-typegen": "^2.3.0",
@@ -57,7 +57,7 @@
     "jsonc-eslint-parser": "^2.4.0",
     "prettier": "^3.6.2",
     "tsdown": "^0.14.1",
-    "tsx": "^4.20.4",
+    "tsx": "^4.20.5",
     "typescript": "^5.9.2",
     "vitest": "^3.2.4"
   },
