@@ -7,7 +7,7 @@ import type { RuleContext } from '@typescript-eslint/utils/ts-eslint'
 import type { Rule } from 'eslint'
 
 // @keep-sorted
-const hasDocs = ['prefer-string-function']
+const hasDocs = new Set(['prefer-string-function'])
 
 const blobUrl =
   'https://github.com/sxzz/eslint-plugin-sxzz/blob/main/src/rules/'
@@ -69,7 +69,9 @@ function createRule<
     ): RuleListener => {
       const optionsWithDefault = context.options.map((options, index) => {
         return {
+          // eslint-disable-next-line unicorn/no-useless-fallback-in-spread
           ...(defaultOptions[index] || {}),
+          // eslint-disable-next-line unicorn/no-useless-fallback-in-spread
           ...(options || {}),
         }
       }) as unknown as TOptions
@@ -81,7 +83,7 @@ function createRule<
 }
 
 export const createEslintRule = RuleCreator((ruleName) =>
-  hasDocs.includes(ruleName)
+  hasDocs.has(ruleName)
     ? `${blobUrl}${ruleName}.md`
     : `${blobUrl}${ruleName}.test.ts`,
 ) as any as <TOptions extends readonly unknown[], TMessageIds extends string>({
