@@ -53,7 +53,7 @@
     "bumpp": "^10.3.1",
     "eslint": "^9.39.0",
     "eslint-typegen": "^2.3.0",
-    "eslint-vitest-rule-tester": "^2.3.0",
+    "eslint-vitest-rule-tester": "^3.0.0",
     "jsonc-eslint-parser": "^2.4.1",
     "prettier": "^3.6.2",
     "tsdown": "^0.15.12",
