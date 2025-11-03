@@ -1,7 +1,7 @@
 {
   "name": "eslint-plugin-sxzz",
   "version": "0.4.1",
-  "packageManager": "pnpm@10.19.0",
+  "packageManager": "pnpm@10.20.0",
   "description": "A collection of ESLint rules.",
   "type": "module",
   "license": "MIT",
@@ -44,22 +44,22 @@
     "eslint": "*"
   },
   "devDependencies": {
-    "@sxzz/eslint-config": "^7.2.7",
+    "@sxzz/eslint-config": "^7.2.8",
     "@sxzz/prettier-config": "^2.2.4",
-    "@types/node": "^24.9.1",
+    "@types/node": "^24.10.0",
     "@typescript-eslint/parser": "^8.46.2",
     "@typescript-eslint/utils": "^8.46.2",
-    "@typescript/native-preview": "^7.0.0-dev.20251026.1",
+    "@typescript/native-preview": "^7.0.0-dev.20251102.1",
     "bumpp": "^10.3.1",
-    "eslint": "^9.38.0",
+    "eslint": "^9.39.0",
     "eslint-typegen": "^2.3.0",
     "eslint-vitest-rule-tester": "^2.3.0",
     "jsonc-eslint-parser": "^2.4.1",
     "prettier": "^3.6.2",
-    "tsdown": "^0.15.10",
+    "tsdown": "^0.15.12",
     "tsx": "^4.20.6",
     "typescript": "^5.9.3",
-    "vitest": "^4.0.3"
+    "vitest": "^4.0.6"
   },
   "engines": {
     "node": ">=20.18.0"
