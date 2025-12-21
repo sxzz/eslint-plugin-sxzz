@@ -5,6 +5,8 @@ export default defineConfig({
   dts: {
     tsgo: true,
   },
+  exports: true,
+  inlineOnly: [],
   plugins: [
     {
       name: 'inject-eslint-typegen',
