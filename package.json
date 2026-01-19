@@ -47,22 +47,22 @@
     "eslint": "*"
   },
   "devDependencies": {
-    "@sxzz/eslint-config": "^7.4.4",
+    "@sxzz/eslint-config": "^7.4.5",
     "@sxzz/prettier-config": "^2.2.6",
-    "@types/node": "^25.0.6",
-    "@typescript-eslint/parser": "^8.52.0",
-    "@typescript-eslint/utils": "^8.52.0",
-    "@typescript/native-preview": "^7.0.0-dev.20260111.1",
-    "bumpp": "^10.3.2",
+    "@types/node": "^25.0.9",
+    "@typescript-eslint/parser": "^8.53.0",
+    "@typescript-eslint/utils": "^8.53.0",
+    "@typescript/native-preview": "^7.0.0-dev.20260118.1",
+    "bumpp": "^10.4.0",
     "eslint": "^9.39.2",
     "eslint-typegen": "^2.3.0",
     "eslint-vitest-rule-tester": "^3.0.1",
     "jsonc-eslint-parser": "^2.4.2",
-    "prettier": "^3.7.4",
+    "prettier": "^3.8.0",
     "tsdown": "^0.19.0",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",
-    "vitest": "^4.0.16"
+    "vitest": "^4.0.17"
   },
   "resolutions": {
     "eslint-plugin-sxzz": "workspace:*"
