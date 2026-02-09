@@ -1,2 +1,5 @@
+overrides:
+  eslint-plugin-sxzz: 'workspace:*'
+
 allowBuilds:
   esbuild: false
