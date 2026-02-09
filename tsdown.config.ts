@@ -1,20 +1,22 @@
-import { defineConfig } from 'tsdown'
+import { nodeLib } from 'tsdown-preset-sxzz'
 
-export default defineConfig({
-  entry: ['./src/index.ts'],
-  dts: {
-    tsgo: true,
-  },
-  exports: true,
-  inlineOnly: [],
-  plugins: [
-    {
-      name: 'inject-eslint-typegen',
-      renderChunk(code, chunk) {
-        if (chunk.fileName.endsWith('index.d.ts')) {
-          return `/// <reference path="../eslint-typegen.d.ts" />\n${code}`
-        }
-      },
+export default nodeLib(
+  {},
+  {
+    dts: { tsgo: true },
+    external: [/^@typescript-eslint\//],
+    treeshake: {
+      moduleSideEffects: false,
     },
-  ],
-})
+    plugins: [
+      {
+        name: 'inject-eslint-typegen',
+        renderChunk(code, chunk) {
+          if (chunk.fileName.endsWith('index.d.ts')) {
+            return `/// <reference path="../eslint-typegen.d.ts" />\n${code}`
+          }
+        },
+      },
+    ],
+  },
+)
