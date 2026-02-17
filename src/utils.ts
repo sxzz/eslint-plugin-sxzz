@@ -70,14 +70,14 @@ function createRule<
       const optionsWithDefault = context.options.map((options, index) => {
         return {
           // eslint-disable-next-line unicorn/no-useless-fallback-in-spread
-          ...(defaultOptions[index] || {}),
+          ...(defaultOptions?.[index] || {}),
           // eslint-disable-next-line unicorn/no-useless-fallback-in-spread
           ...(options || {}),
         }
       }) as unknown as TOptions
       return create(context, optionsWithDefault)
     }) as any,
-    defaultOptions,
+    defaultOptions: defaultOptions as TOptions,
     meta: meta as any,
   }
 }
