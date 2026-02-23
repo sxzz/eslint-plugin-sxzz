@@ -55,7 +55,7 @@
     "eslint": "^10.0.0",
     "eslint-typegen": "^2.3.1",
     "eslint-vitest-rule-tester": "^3.1.0",
-    "jsonc-eslint-parser": "^2.4.2",
+    "jsonc-eslint-parser": "^3.1.0",
     "prettier": "^3.8.1",
     "tsdown": "^0.20.3",
     "tsdown-preset-sxzz": "^0.3.3",
