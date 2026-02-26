@@ -1,4 +1,4 @@
-import parser from 'jsonc-eslint-parser'
+import * as parser from 'jsonc-eslint-parser'
 import { run } from './_test'
 import rule, { RULE_NAME } from './require-package-field'
 import type { InvalidTestCase, ValidTestCase } from 'eslint-vitest-rule-tester'
