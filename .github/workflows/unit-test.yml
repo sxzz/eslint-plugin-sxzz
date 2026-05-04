@@ -8,7 +8,7 @@ on:
 
 jobs:
   unit-test:
-    uses: sxzz/workflows/.github/workflows/unit-test.yml@v1
+    uses: sxzz/workflows/.github/workflows/unit-test.yml@main
     with:
       skip-lint: true
       test: pnpm lint && pnpm typecheck && pnpm test
