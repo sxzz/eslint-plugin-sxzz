@@ -4,7 +4,9 @@ export default nodeLib(
   {},
   {
     dts: { tsgo: true },
-    external: [/^@typescript-eslint\//],
+    deps: {
+      neverBundle: [/^@typescript-eslint\//],
+    },
     treeshake: {
       moduleSideEffects: false,
     },
@@ -12,7 +14,7 @@ export default nodeLib(
       {
         name: 'inject-eslint-typegen',
         renderChunk(code, chunk) {
-          if (chunk.fileName.endsWith('index.d.ts')) {
+          if (chunk.fileName.endsWith('index.d.mts')) {
             return `/// <reference path="../eslint-typegen.d.ts" />\n${code}`
           }
         },
