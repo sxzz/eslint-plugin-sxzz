@@ -1,12 +1,12 @@
-import { version } from '../package.json'
-import preferStringFunction from './rules/prefer-string-function'
-import requirePackageField from './rules/require-package-field'
+import pkg from '../package.json' with { type: 'json' }
+import preferStringFunction from './rules/prefer-string-function.ts'
+import requirePackageField from './rules/require-package-field.ts'
 import type { ESLint, Linter } from 'eslint'
 
 export const plugin = {
   meta: {
     name: 'sxzz',
-    version,
+    version:pkg.version,
   },
   // @keep-sorted
   rules: {

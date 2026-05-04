@@ -33,7 +33,7 @@
   "scripts": {
     "lint": "eslint --cache .",
     "lint:fix": "pnpm run lint --fix",
-    "build": "tsx scripts/typegen.ts && tsdown",
+    "build": "node scripts/typegen.ts && tsdown",
     "dev": "tsdown --watch",
     "test": "vitest",
     "typecheck": "tsgo --noEmit",

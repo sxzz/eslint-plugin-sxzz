@@ -1,6 +1,6 @@
 import * as parser from 'jsonc-eslint-parser'
-import { run } from './_test'
-import rule, { RULE_NAME } from './require-package-field'
+import { run } from './_test.ts'
+import rule, { RULE_NAME } from './require-package-field.ts'
 import type { InvalidTestCase, ValidTestCase } from 'eslint-vitest-rule-tester'
 
 function make(data: any, fields: string[], errs: string[] = []) {

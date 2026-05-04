@@ -1,5 +1,5 @@
 import path from 'node:path'
-import { createEslintRule } from '../utils'
+import { createEslintRule } from '../utils.ts'
 import type { AST } from 'jsonc-eslint-parser'
 
 export const RULE_NAME = 'require-package-field'

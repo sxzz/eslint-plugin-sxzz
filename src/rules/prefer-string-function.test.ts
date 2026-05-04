@@ -1,6 +1,6 @@
 import { expect } from 'vitest'
-import { run } from './_test'
-import rule, { RULE_NAME } from './prefer-string-function'
+import { run } from './_test.ts'
+import rule, { RULE_NAME } from './prefer-string-function.ts'
 import type { InvalidTestCase, ValidTestCase } from 'eslint-vitest-rule-tester'
 
 const valids: ValidTestCase[] = ['String(foo)', '`str${foo}`', '`${foo}${bar}`']
