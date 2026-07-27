@@ -51,7 +51,7 @@
     "@typescript-eslint/parser": "^8.59.1",
     "@typescript-eslint/utils": "^8.59.1",
     "@typescript/native-preview": "^7.0.0-dev.20260503.1",
-    "bumpp": "^11.0.1",
+    "bumpp": "^12.0.0",
     "eslint": "^10.3.0",
     "eslint-typegen": "^2.3.1",
     "eslint-vitest-rule-tester": "^3.1.0",
