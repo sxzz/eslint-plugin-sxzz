@@ -6,7 +6,7 @@ import type { ESLint, Linter } from 'eslint'
 export const plugin = {
   meta: {
     name: 'sxzz',
-    version:pkg.version,
+    version: pkg.version,
   },
   // @keep-sorted
   rules: {

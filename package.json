@@ -2,7 +2,6 @@
   "name": "eslint-plugin-sxzz",
   "type": "module",
   "version": "0.5.0",
-  "packageManager": "pnpm@12.4.1",
   "description": "A collection of ESLint rules.",
   "author": "Kevin Deng <sxzz@sxzz.moe>",
   "license": "MIT",
@@ -30,6 +29,13 @@
   "engines": {
     "node": "^22.18.0 || >=24.0.0"
   },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.4.2",
+      "onFail": "download"
+    }
+  },
   "scripts": {
     "lint": "eslint --cache .",
     "lint:fix": "pnpm run lint --fix",
@@ -45,22 +51,22 @@
     "eslint": "^9.15.0 || ^10.0.0"
   },
   "devDependencies": {
-    "@sxzz/eslint-config": "^8.0.0",
-    "@sxzz/prettier-config": "^2.3.1",
+    "@sxzz/eslint-config": "^8.6.0",
+    "@sxzz/prettier-config": "^2.3.2",
     "@types/node": "^25.6.0",
-    "@typescript-eslint/parser": "^8.59.1",
-    "@typescript-eslint/utils": "^8.59.1",
-    "@typescript/native-preview": "^7.0.0-dev.20260503.1",
-    "bumpp": "^12.0.0",
-    "eslint": "^10.3.0",
+    "@typescript-eslint/parser": "^8.70.0",
+    "@typescript-eslint/utils": "^8.70.0",
+    "@typescript/native-preview": "^7.0.0-dev.20260707.2",
+    "bumpp": "^12.3.0",
+    "eslint": "^10.10.0",
     "eslint-typegen": "^2.3.1",
-    "eslint-vitest-rule-tester": "^3.1.0",
-    "jsonc-eslint-parser": "^3.1.0",
-    "prettier": "^3.8.3",
+    "eslint-vitest-rule-tester": "^3.2.0",
+    "jsonc-eslint-parser": "^3.3.0",
+    "prettier": "^3.9.7",
     "tsdown": "^0.23.0",
     "tsdown-preset-sxzz": "^0.7.0",
     "typescript": "^6.0.3",
-    "vitest": "^5.0.0"
+    "vitest": "^5.0.1"
   },
   "prettier": "@sxzz/prettier-config"
 }

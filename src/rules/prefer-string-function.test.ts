@@ -22,13 +22,12 @@ run({
   rule,
 
   valid: valids,
-  invalid: invalid.map(
-    (i): InvalidTestCase =>
-      typeof i === 'string'
-        ? {
-            code: i,
-            output: (o) => expect(o).toMatchSnapshot(),
-          }
-        : i,
+  invalid: invalid.map((i): InvalidTestCase =>
+    typeof i === 'string'
+      ? {
+          code: i,
+          output: (o) => expect(o).toMatchSnapshot(),
+        }
+      : i,
   ),
 })

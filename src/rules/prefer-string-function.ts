@@ -23,28 +23,27 @@ export default createEslintRule<Options, MessageIds>({
     return {
       TemplateLiteral(node) {
         if (
-          node.expressions.length === 1 &&
-          node.quasis.length === 2 &&
-          node.quasis.every((quasi) => quasi.value.raw === '')
+          node.expressions.length !== 1 ||
+          node.quasis.length !== 2 ||
+          node.quasis.some((quasi) => quasi.value.raw !== '')
         ) {
-          const expression = node.expressions[0]
-          return context.report({
-            messageId: 'stringFunction',
-            node,
-            fix(fixer) {
-              return [
-                fixer.replaceTextRange(
-                  [node.range[0], expression.range[0]],
-                  'String(',
-                ),
-                fixer.replaceTextRange(
-                  [expression.range[1], node.range[1]],
-                  ')',
-                ),
-              ]
-            },
-          })
+          return
         }
+
+        const expression = node.expressions[0]
+        return context.report({
+          messageId: 'stringFunction',
+          node,
+          fix(fixer) {
+            return [
+              fixer.replaceTextRange(
+                [node.range[0], expression.range[0]],
+                'String(',
+              ),
+              fixer.replaceTextRange([expression.range[1], node.range[1]], ')'),
+            ]
+          },
+        })
       },
     }
   },
