@@ -1,8 +1,13 @@
 overrides:
   eslint-plugin-sxzz: 'workspace:*'
-
 minimumReleaseAge: 0
+permissions:
+  eslint-vitest-rule-tester:
+    skills: true
 shellEmulator: true
+skills:
+  dirs:
+    - .agents/skills
 trustLockfile: true
 trustPolicy: no-downgrade
 trustPolicyIgnoreAfter: 10080 # 7 days
